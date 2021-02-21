@@ -1,6 +1,8 @@
 /*
 Bitcoin, SHA-256
 Ethereum - 
+
+Based off of https://lhartikk.github.io/jekyll/update/2017/07/14/chapter1.html
 */
 
 #ifndef BLOCK_HPP
@@ -16,11 +18,11 @@ class Block {
     private:
         int index;
         int timestamp;
-        int data;
+        string data;
         string prevHash;
         string hash;
     public:
-    Block(int, int, int, string, string);
+    Block(int, int, string, string, string);
 
 };
 
